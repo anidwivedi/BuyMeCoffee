@@ -3,55 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Me</title>
+    <title>Buy Me coffee</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
         }
         h1 {
-            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #1c1e21;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 30px;
+            color: #606770;
         }
         .donation-method {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #1c1e21;
+        }
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .upi-id {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #00796b;
+            margin-bottom: 15px;
         }
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
             background-color: #0070ba;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1em;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         button:hover {
             background-color: #005fa3;
         }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #90949c;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            button {
+                font-size: 0.9em;
+                padding: 10px 15px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Support My Work</h1>
-    <p>If you'd like to support my work, you can donate using UPI or PayPal below:</p>
+    <div class="container">
+        <h1>Support My Work</h1>
+        <p>If you'd like to support my work, you can Support me using UPI or PayPal below. Your support means a lot!</p>
 
-    <div class="donation-method">
-        <h2>Donate via UPI</h2>
-        <p>Scan the QR code or use this UPI ID: <strong>your-upi-id@bank</strong></p>
-        <img src="path-to-qr-code-image" alt="UPI QR Code" style="width:200px;height:200px;">
+        <div class="donation-method">
+            <h2>Donate via UPI</h2>
+            <img src="Gpay-qr.jpg" alt="UPI QR Code" class="qr-code">
+            <div class="upi-id">anidwivedi002@okaxis</div>
+        </div>
+
+        <div class="donation-method">
+            <h2>Donate via PayPal</h2>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="business" value="aniWebey@gmail.com">
+                <input type="hidden" name="currency_code" value="USD">
+                <button type="submit"><a href="https://paypal.me/anidwivedi?country.x=IN&locale.x=en_GB">Donate via PayPal</a></button>
+            </form>
+        </div>
     </div>
 
-    <div class="donation-method">
-        <h2>Donate via PayPal</h2>
-        <form action="https://www.paypal.com/donate" method="post" target="_blank">
-            <input type="hidden" name="business" value="your-paypal-email@example.com">
-            <input type="hidden" name="currency_code" value="USD">
-            <button type="submit">Donate via PayPal</button>
-        </form>
+    <div class="footer">
+        <p>Thank you for your support!</p>
     </div>
 </body>
 </html>

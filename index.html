@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .donation-method {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #0070ba;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Support My Work</h1>
+    <p>If you'd like to support my work, you can donate using UPI or PayPal below:</p>
+
+    <div class="donation-method">
+        <h2>Donate via UPI</h2>
+        <p>Scan the QR code or use this UPI ID: <strong>your-upi-id@bank</strong></p>
+        <img src="path-to-qr-code-image" alt="UPI QR Code" style="width:200px;height:200px;">
+    </div>
+
+    <div class="donation-method">
+        <h2>Donate via PayPal</h2>
+        <form action="https://www.paypal.com/donate" method="post" target="_blank">
+            <input type="hidden" name="business" value="your-paypal-email@example.com">
+            <input type="hidden" name="currency_code" value="USD">
+            <button type="submit">Donate via PayPal</button>
+        </form>
+    </div>
+</body>
+</html>
